@@ -1,4 +1,4 @@
-package com.example.toplearners;
+package com.example.toplearners.netutils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

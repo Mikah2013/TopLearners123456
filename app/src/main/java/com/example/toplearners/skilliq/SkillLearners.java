@@ -1,7 +1,10 @@
-package com.example.toplearners;
+package com.example.toplearners.skilliq;
 
 import android.net.Uri;
 import android.util.Log;
+
+import com.example.toplearners.model.SkillListItem;
+import com.example.toplearners.netutils.Utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

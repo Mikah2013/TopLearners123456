@@ -1,4 +1,4 @@
-package com.example.toplearners.skilliq;
+package com.example.toplearners.model;
 
 public class SkillListItem {
 

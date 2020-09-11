@@ -1,4 +1,4 @@
-package com.example.toplearners.leaders;
+package com.example.toplearners.model;
 
 public class LeaderListItem {
 

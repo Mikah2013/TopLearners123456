@@ -1,4 +1,4 @@
-package com.example.toplearners;
+package com.example.toplearners.dialogFragments;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
+
+import com.example.toplearners.R;
 
 
 public class UnSuccessfulDialogFragment extends DialogFragment {
