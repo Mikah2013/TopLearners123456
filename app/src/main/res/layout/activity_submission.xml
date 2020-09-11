@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:id="@+id/backImageBtn"
+            android:layout_width="32dp"
+            android:layout_height="48dp"
+            android:src="@drawable/left_arrow"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitXY"
+            android:layout_gravity="start"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/gads_two"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/projectTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/project_submission"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/projectTxt"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/holo_orange_dark" />
+
+    <LinearLayout
+        android:id="@+id/layout_edTx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/projectTxt"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/firstNameEdTx"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:hint="@string/first_name"
+            android:background="@android:color/white"
+            android:layout_weight="1.0"/>
+
+        <EditText
+            android:id="@+id/lastNameEdTx"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:hint="@string/last_name"
+            android:background="@android:color/white"
+            android:layout_weight="1.0"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/emailEdTx"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/email_address"
+        android:layout_below="@id/layout_edTx"
+        android:background="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/projectEdTx"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/project_on_github_link"
+        android:layout_below="@id/emailEdTx"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="195dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/projectEdTx"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_corners_two" />
+
+</RelativeLayout>
