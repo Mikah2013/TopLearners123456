@@ -37,7 +37,7 @@ public class AreYouSureFragment extends DialogFragment {
     private String email;
     private String projectLink;
 
-    
+
 
     private static Retrofit.Builder builder = new Retrofit.Builder()
             .baseUrl(BASE_URL)
@@ -64,6 +64,7 @@ public class AreYouSureFragment extends DialogFragment {
                 }
                 //Toast.makeText(getContext(), firstName + lastName + email + projectLink, Toast.LENGTH_SHORT).show();
                 sendProject(firstName, lastName, email, projectLink);
+                dismiss();
 
             }
         });
